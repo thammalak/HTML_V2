@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyPage v2 - Profile</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <main class="container">
+    <!-- Profile (ใช้ Table ตาม requirement) -->
+    <section class="card">
+      <table class="profile-table">
+        <tr>
+          <td class="profile-img-cell">
+            <img class="profile-img" src="1.png" alt="Profile photo" />
+          </td>
+
+          <!-- Challenge: ทำให้รูปกับ Text ห่างกันได้อย่างไร ?
+               => ทำผ่าน CSS: padding-left ใน .profile-text-cell -->
+          <td class="profile-text-cell">
+            <h2 class="name">ธรรมลักษณ์ พุทธธรรมา</h2>
+            <p class="muted">Developer, Tester</p>
+            <p>สาขาเทคโนโลยีดิจิทัลและสารสนเทศ</p>
+            <p>
+              <a class="link" href="https://www.pim.ac.th/" target="_blank" rel="noopener">
+                สถาบันการจัดการปัญญาภิวัฒน์ (PIM)
+              </a>
+            </p>
+
+            <div class="cta-row">
+              <a class="btn" href="contact.html">ติดต่อฉัน (Contact)</a>
+              <a class="btn btn-ghost" href="#about">อ่านประวัติ (About me)</a>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- About me -->
+    <section id="about" class="card">
+      <h3 class="section-title">About me</h3>
+      <p class="text">
+        ปัจจุบันกำลังศึกษาอยู่ในสาขาเทคโนโลยีดิจิทัลและสารสนเทศ ผมมีความสนใจด้านการพัฒนาเว็บไซต์และการทดสอบซอฟต์แวร์
+        (Software Testing) ชอบเรียนรู้เทคโนโลยีใหม่ ๆ อยู่เสมอ เช่น การเขียนโปรแกรม Java, การออกแบบฐานข้อมูล SQL และการพัฒนาเว็บ
+        Front-End เป้าหมายของผมคือการพัฒนาทักษะให้สามารถสร้างระบบที่ใช้งานง่าย มีประสิทธิภาพ และตอบโจทย์ผู้ใช้ได้จริง
+      </p>
+    </section>
+
+    <!-- Experience (ทำให้ใกล้เคียงตัวอย่างภาพ) -->
+    <section id="experience" class="card">
+      <h3 class="section-title">ประสบการณ์การทำงาน</h3>
+
+      <table class="exp-table">
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Work Place</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>MARCH 2025 - MAY 2025</td>
+            <td>CP ALL PUBLIC COMPANY LIMITED, THAILAND</td>
+          </tr>
+          <tr>
+            <td>JUNE 2024 - PRESENT</td>
+            <td>Panyapiwat Institute of Management</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Skills (Table 4 columns ตาม requirement) -->
+    <section id="skills" class="card">
+      <h3 class="section-title">Skills</h3>
+
+      <div class="skills-box">
+        <table class="skills-4col">
+          <tr>
+            <td>Java Programming</td>
+            <td class="stars">★★★★★</td>
+            <td>English</td>
+            <td class="stars">★★☆☆☆</td>
+          </tr>
+          <tr>
+            <td>SQL</td>
+            <td class="stars">★★★☆☆</td>
+            <td>日本語</td>
+            <td class="stars">★☆☆☆☆</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p class="muted"> MyPage v2</p>
+      <div class="footer-links">
+        <!-- แก้เป็นลิงก์ GitHub ของคุณ -->
+        <a class="link" href="https://github.com/thammalak" target="_blank" rel="noopener">GitHub</a>
+        <span class="dot">•</span>
+        <a class="link" href="contact.html">contact.html</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

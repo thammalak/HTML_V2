@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyPage v2 - Contact</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <main class="container">
+    <section class="card">
+      <h2 class="section-title">ช่องทางการติดต่อ</h2>
+
+      <!-- Requirement: ต้องมี ul หรือ ol -->
+      <ol class="contact-list">
+        <li>Email: yourname@example.com</li>
+        <li>Phone: 0X-XXX-XXXX</li>
+        <li>Facebook/IG: your_account</li>
+      </ol>
+
+      <div class="divider"></div>
+
+      <!-- Requirement: ต้องมีฟอร์มการติดต่อ -->
+      <h3 class="section-title">ฟอร์มติดต่อ (Contact Form)</h3>
+
+      <form class="contact-form" action="#" method="post">
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="fullname">ชื่อ-นามสกุล</label>
+            <input id="fullname" name="fullname" type="text" placeholder="กรอกชื่อของคุณ" required />
+          </div>
+
+          <div class="form-field">
+            <label for="email">อีเมล</label>
+            <input id="email" name="email" type="email" placeholder="name@example.com" required />
+          </div>
+
+          <div class="form-field">
+            <label for="topic">หัวข้อ</label>
+            <select id="topic" name="topic" required>
+              <option value="" selected disabled>เลือกหัวข้อ</option>
+              <option value="project">งาน/โปรเจกต์</option>
+              <option value="job">ฝึกงาน/งาน</option>
+              <option value="other">อื่น ๆ</option>
+            </select>
+          </div>
+
+          <div class="form-field form-full">
+            <label for="message">ข้อความ</label>
+            <textarea id="message" name="message" rows="6" placeholder="พิมพ์ข้อความของคุณ..." required></textarea>
+          </div>
+        </div>
+
+        <div class="cta-row">
+          <button class="btn" type="submit">ส่งข้อความ</button>
+          <a class="btn btn-ghost" href="index.html">กลับหน้าโปรไฟล์</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p class="muted"> MyPage v2</p>
+      <div class="footer-links">
+        <a class="link" href="https://github.com/thammalak" target="_blank" rel="noopener">GitHub</a>
+        <span class="dot">•</span>
+        <a class="link" href="contact.html">contact.html</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
